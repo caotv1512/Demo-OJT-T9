@@ -10,6 +10,10 @@ export class AppController {
     return this.appService.getHello();
   }
 
+  @Get('/user-update')
+  updateUser() {
+    return this.appService.updateUser();
+  }
   @Get('user')
   getUser() {
     return this.appService.getUser();
