@@ -14,4 +14,8 @@ export class AppController {
   updateUser() {
     return this.appService.updateUser();
   }
+  @Get('user')
+  getUser() {
+    return this.appService.getUser();
+  }
 }
